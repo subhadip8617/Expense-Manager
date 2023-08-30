@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  background-image: url('../public/background-image.jpg');
+}
+
+.nav{
+  background-color: #563d7c;
+  margin: 2px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title{
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  padding-right: 10px;
+}
+
+.username{
+  border: 1px sokid red;
+}
+
+.content{
+  min-height: 70vh;
+  margin: 15px;
+}
+
+.register-page{
+  height: 90vh;
+}
+
+.filter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0 0 3px grey;
+}
+
+.button-container{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
