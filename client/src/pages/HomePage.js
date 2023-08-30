@@ -26,7 +26,7 @@ const HomePage = () => {
       setLoading(true);
       if(editable){
         const res = await axios.post(
-          "http://localhost:8080/api/v1/transaction/edit-transaction",
+          "https://expense-manager-3ipr.onrender.com/api/v1/transaction/edit-transaction",
           {
             ...values,
             transactionId: editable._id
@@ -41,7 +41,7 @@ const HomePage = () => {
       }
       else{
         const res = await axios.post(
-          "http://localhost:8080/api/v1/transaction/add-transaction",
+          "https://expense-manager-3ipr.onrender.com/api/v1/transaction/add-transaction",
           {
             ...values,
             userId: user._id,
@@ -68,7 +68,7 @@ const HomePage = () => {
       setLoading(true);
       const user = JSON.parse(localStorage.getItem("user"));
       const res = await axios.post(
-        "http://localhost:8080/api/v1/transaction/get-transaction",
+        "https://expense-manager-3ipr.onrender.com/api/v1/transaction/get-transaction",
         {
           userId: user._id,
           frequency,
@@ -88,7 +88,7 @@ const HomePage = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:8080/api/v1/transaction/delete-transaction",
+        "https://expense-manager-3ipr.onrender.com/api/v1/transaction/delete-transaction",
         {
           transactionId: record._id
         }

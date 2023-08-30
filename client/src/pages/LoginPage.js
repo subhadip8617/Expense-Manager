@@ -18,7 +18,7 @@ const LoginPage = () => {
     const submitHandler = async(values) => {
         try {
             setLoading(true);
-            const res = await axios.post('http://localhost:8080/api/v1/user/login', values);
+            const res = await axios.post('https://expense-manager-3ipr.onrender.com/api/v1/user/login', values);
             if(res.data.success){
                 const {data} = res;
                 setLoading(false);
